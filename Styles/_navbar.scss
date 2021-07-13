@@ -1,0 +1,88 @@
+nav {
+    width: 100%;
+    max-width: 1081px;
+    max-height: 85px;
+    height: 100%;
+    border-radius: 8px;
+    background: $secondary-color;
+    margin-bottom: 71px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+            
+            .form-group.search { 
+                display: flex;
+                
+                input#search {
+                    width: 276px;
+                    height: 34px;
+                    padding-left: 16px;
+                }
+            
+                button {
+                    width: 69px;
+                    height: 34px;
+                    position: relative;
+                    right: 40px;
+                    
+                }
+            }
+
+            .form-group.deadline { 
+            
+                label {
+                    color: #fff;
+                    font-size: 1.4rem;
+                    margin-right: 15px;
+                }
+                
+                select {
+                    width: 193px;
+                    height: 34px;
+                    padding-left: 29px;
+                    appearance: none;
+                    background: url(/assets/select-angle-down.png) no-repeat center right #FFF;
+                }
+            }
+
+            @media only screen and (max-width : 768px){
+                align-items: center;
+                
+                .form-group.search { 
+                    margin-bottom: 19px;
+                    margin-left: 39px;
+                }      
+            }
+    }
+
+    @media only screen and (max-width : 1024px){
+        width: 95%;
+    }
+
+    @media only screen and (max-width : 768px){
+        max-width: 650px;
+        height: 100%;
+        max-height: 146px;
+    }
+        
+    @media only screen and (max-width : 360px){
+        width: 100%;
+        max-width: 344px;
+        height: 100%;
+        max-height: 146px;
+        margin-bottom: 37px;
+        
+        flex-direction: column;
+    }
+        
+}
+
+
